@@ -1,6 +1,6 @@
 function importAll(r) {
   let images = [];
-  r.keys().map((item, index) => { return images[index] = { url: r(item) } });
+  r.keys().map((item, index) => { return images[index] = [  r(item) ] });
   return images;
 }
 

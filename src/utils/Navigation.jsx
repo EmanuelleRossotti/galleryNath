@@ -7,12 +7,12 @@ const Navigation = () => {
     return toggle ?
         <div className="labeling">
             <Carrusel />
-            <button className="toggleButton" onClick={() => setToggle(prev => !prev)}>↕</button>
+            <button className="toggleButton" onClick={() => setToggle(prev => !prev)}>↔</button>
         </div>
         :
         <div className="labelingUp">
             <Carrusel />
-            <button className="toggleButton" onClick={() => setToggle(prev => !prev)}>↕</button>
+            <button className="toggleButton" onClick={() => setToggle(prev => !prev)}>↔</button>
         </div>
 }
 

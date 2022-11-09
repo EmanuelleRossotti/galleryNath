@@ -2,6 +2,7 @@ import React, { createContext, useState, useEffect } from "react";
 import images from "../images/imagenes"
 //importamos imágenes y funciones que necesitamos
 
+console.log(images)
 //Creamos una variable vacía
 let interval;
 //Creamos el contexto
@@ -44,7 +45,7 @@ export const Provider = props => {
 
     useEffect(() => {
         const items = [];
-        for (let i = page; i < page + 15; i++) {
+        for (let i = page; i < page + 10; i++) {
             items.push(images[i]);
         }
         setPages(items)
