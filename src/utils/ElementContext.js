@@ -2,7 +2,6 @@ import React, { createContext, useState, useEffect } from "react";
 import images from "../images/imagenes"
 //importamos imágenes y funciones que necesitamos
 
-console.log(images)
 //Creamos una variable vacía
 let interval;
 //Creamos el contexto
@@ -80,7 +79,7 @@ export const Provider = props => {
     }
 
     const navNext = () => {
-        if (page < images.length-16) setPage(prev => prev + 1)
+        if (page < images.length-10) setPage(prev => prev + 1)
     }
 
     //Llamamos todo lo que queremos exportar a los hijos del provider
